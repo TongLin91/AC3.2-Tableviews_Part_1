@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KuV-Iy-6GA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KuV-Iy-6GA">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -45,7 +45,13 @@
                             <outlet property="delegate" destination="yet-gM-qc3" id="XBu-Bk-Pre"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="gWo-Yo-CxC"/>
+                    <navigationItem key="navigationItem" id="gWo-Yo-CxC">
+                        <barButtonItem key="rightBarButtonItem" title="Sort by:" id="BzR-VT-Jvk">
+                            <connections>
+                                <action selector="sortOptions:" destination="yet-gM-qc3" id="BPJ-PZ-4fW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHw-bd-Gmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
